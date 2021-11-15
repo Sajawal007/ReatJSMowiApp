@@ -1,36 +1,23 @@
 import React, { useState } from 'react';
 import Nav from './Navbar';
-import Card from './Cards';
 import Netflix from './Netflix';
 import Amazon from './Amazon';
-import Sdata from './Sdata';
-const arr=[];
-const Decider=(prop)=>{
-      if(prop.param.localeCompare("netflix")==0)
-      {
-        Netflix(arr);
-      }
-      else if(prop.param.localeCompare("amazon")==0)
-      {
-        Amazon(arr);
-      }
-      return(<div></div>);
-}
+const arr = [];
+const netflix_heading="Welcome to Netflix Series";
+const amazon_heading="Welcome to Amazon Series";
 //let's do map array
-const App=(prop)=>{
-
-return (<>
-<Nav/> 
-<div className="container">
-    <div className="row">
-    <Decider param={prop.fav}/>
-    {arr.map((val) => {return (<>
-        <div className="col s12 m4">
-        <Card imgsrc={val.imgsrc} title={val.title}/>
-        </div>
-        </>);})}
-    </div>
-</div>
-</>);
+const App = (prop) => {
+    if (prop.fav == 'netflix') {
+        return (<>
+            <Nav heading={netflix_heading}/>
+            <Netflix />
+        </>);
+    }
+    else {
+        return (<>
+            <Nav heading={amazon_heading}/>
+            <Amazon />
+        </>);
+    }
 }
 export default App;

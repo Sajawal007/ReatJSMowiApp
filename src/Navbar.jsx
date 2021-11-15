@@ -8,11 +8,11 @@ const logo_st={
 };
 
 
-const Navbar=()=>{
+const Navbar=(prop)=>{
     return (<>
 <nav>
     <div style={nav_st} className="nav-wrapper">
-    <a style={logo_st} className="brand-logo center red-text">Welcome to TOP Series</a>
+    <a style={logo_st} className="brand-logo center red-text">{prop.heading}</a>
     </div>
     </nav>
     </>);

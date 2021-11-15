@@ -12,7 +12,6 @@ const img_st={
 
 
 const Card=(props)=>{
-
     const img=props.imgsrc;
     const title=props.title;
 
