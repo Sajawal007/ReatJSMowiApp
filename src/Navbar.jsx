@@ -12,7 +12,7 @@ const Navbar=()=>{
     return (<>
 <nav>
     <div style={nav_st} className="nav-wrapper">
-    <a style={logo_st} className="brand-logo center red-text">Welcome to TOP Netflix Series</a>
+    <a style={logo_st} className="brand-logo center red-text">Welcome to TOP Series</a>
     </div>
     </nav>
     </>);
