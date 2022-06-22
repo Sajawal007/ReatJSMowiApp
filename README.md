@@ -8,3 +8,4 @@ Concepts:
 4) Array.MAP()
 5) HTML/CSS
 6) useStates
+7) Responsive
