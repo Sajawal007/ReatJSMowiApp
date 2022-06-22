@@ -1,7 +1,7 @@
 # Basic Web App using ReactJS and Materialize-CSS
 Concepts:
-\n1- Props
-\n2- Dynamic Insertions
-\n3- Components
-\n4- Array.MAP()
-\n5- HTML/CSS
+1) Props
+2) Dynamic Insertions
+3) Components
+4) Array.MAP()
+5) HTML/CSS
